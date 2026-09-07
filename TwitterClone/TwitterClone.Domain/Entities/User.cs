@@ -1,6 +1,6 @@
 ﻿namespace TwitterClone.Domain.Entities
 {
-    internal class User
+    public class User
     {
         private Guid _id;
         private string _firstName;
@@ -19,6 +19,17 @@
         {
             get { return _firstName; }
             set { _firstName = value; }
+        }
+        public string LastName
+        {
+            get { return _lastName; }
+            set { _lastName = value; }
+
+        }
+        public string Email
+        {
+            get {return _email;}
+            set { _email = value; }
         }
     }
 }
